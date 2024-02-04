@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            background-color: bisque;  
+            min-width: 50px;
+            max-height: auto;
+            margin: none;
+            padding: 20px;
+            border: 2px solid #DADAD9;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" style="display: flex; flex-direction: column; border-color: grey; gap: 20px;">
+        <div class="box" style="border-color: ivory; display: flex; flex-direction: column; gap: 20px;">
+            <div class="box" style="border-color: yellow;"></div>
+            <div class="box" style="border-color: yellow; display: flex; flex-direction: row; flex-wrap: wrap; gap: 20px; justify-content: space-evenly; height: 400px; align-items: baseline;">
+                <div class="box" style="border-color: black;"></div>
+                <div class="box" style="border-color: black;"></div>
+                <div class="box" style="border-color: black;"></div>
+                <div class="box" style="border-color: black;"></div>
+                <div class="box" style="border-color: black;"></div>
+            </div>
+            <div class="box" style="border-color: yellow; display: flex; flex-direction: row; flex-wrap: wrap; gap: 20px;">
+                <div class="box" style="border-color: blue; flex-grow: 1;"></div>
+                <div class="box" style="border-color: blue; display: flex; flex-direction: column; flex-wrap: wrap; gap: 20px; flex-grow: 1;">
+                    <div class="box" style="border-color: crimson;"></div>
+                    <div class="box" style="border-color: crimson;"></div>
+                    <div class="box" style="border-color: crimson;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="box" style="border-color: gray;"></div>
+        
+
+    </div>
+    
+</body>
+</html>
