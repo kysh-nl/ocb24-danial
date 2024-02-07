@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .login-container {
+            max-width: 400px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: #2A2C2E;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-container h2 {
+            color: #333333;
+        }
+
+        .login-form {
+            margin-top: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .form-group input[type="submit"] {
+            background-color: #4caf50;
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+        .box {    
+        max-width: auto;
+        min-height: auto;
+        }
+    .text {
+        text-align: center;
+        font-size: 16px;
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        }
+    .button {
+        padding: 16px;
+        border-radius: 16px;
+        flex-wrap: wrap;
+        font-size: 16px;
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        }
+    .container {    
+        max-width: auto;
+        min-height: auto;
+        }
+    
+    </style>
+</head>
+<body>
+
+    <div class="box" style="display: flex; flex-direction: row; gap: 20px; justify-content: space-between; align-items: center; flex-wrap: wrap; padding-top: 24px; padding-left: 20px; padding-right: 20px; padding-bottom: 20px; border-radius: 20px; background-color:#2A2C2E; max-width: 1200px; margin: auto; margin-top: 12px;">
+        <a href="index.html"><div><img src="Assets/logo.png" alt="" width="166px" height="40px"></div></a>
+            <div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; gap: 20px;">
+                <a href="index.html"><div class=" text" style="color: #F4CE47;">Books</div></a>  
+                <div class=" text" style="color: white;">Authors</div>
+                <div class=" text" style="color: white;">What to Read?</div>
+                <div class=" text" style="color: white;">Gift Ideas</div>
+                <div class=" text" style="color: white;">About Us</div>
+            </div>
+            <div style="display: flex; flex-direction: row; gap: 20px; justify-content: space-between; align-items: center; flex-wrap: wrap">
+                <div><img src="Assets/icons.png" alt="" width="112px" height="24px"></div>
+                <a href="login.html"><button class="button" style="background-color: #F4CE47; max-width: 106px; max-height: 56px; ">LOGIN</button>   
+                </div></a>   
+            </div>       
+        </div>
+    
+    
+        <div class="box" style="display: flex; flex-direction: row;  justify-content: center; align-items: center; background-color:#F4CE47; margin-top: 12px; flex-wrap: wrap; margin-bottom: 12px;">
+            <div style="display: flex; flex-direction: row; justify-content: center; gap: 24px; align-items: center;">
+                <div class=" text" style="color: #F4BA30; font-size: 48px;">ALL BOOKS</div>
+                <div class=" text" style="color: #F4BA30; font-size: 48px">ALL BOOKS</div>
+                <div class=" text" style="color: #2A2C2E; font-size: 48px">ALL BOOKS</div>
+                <div class=" text" style="color: #F4BA30; font-size: 48px">ALL BOOKS</div>
+                <div class=" text" style="color: #F4BA30; font-size: 48px">ALL BOOKS</div>
+            </div>
+        </div>
+
+<div class="login-container">
+    <h2 style="display: font; color: #ffffff;">Login Form</h2>
+    <form class="login-form" action="your_login_processing_script.php" method="post">
+        <div class="form-group" style="display: font; color: #ffffff;">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+
+        <div class="form-group" style="display: font; color: #ffffff;">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Login">
+        </div>
+    </form>
+
+    <a href="signup.html"><div style="display: font; color: #ffffff;">Not registered? Create Account Here</div></a>
+
+</div>
+
+<div class="box" style="display: flex; flex-direction: row; gap: 20px; justify-content: space-between; align-items: center; flex-wrap: wrap; padding-top: 24px; padding-left: 20px; padding-right: 20px; padding-bottom: 20px; border-radius: 0px; background-color:#2A2C2E; max-height: 80px;margin-top: 12px; max-width: 1200px; margin: auto; margin-top: 12px;">
+    <div><img src="Assets/logo.png" alt="" width="166px" height="40px"></div>
+
+</div>
+
+
+<div class="box" style="display: flex; flex-direction: row; gap: 20px; justify-content: space-between; align-items: center; flex-wrap: wrap; padding-top: 24px; padding-left: 20px; padding-right: 20px; padding-bottom: 20px; border-radius: 0px; background-color:#000000DE; max-height: 40px; max-width: 1200px; margin: auto; margin-bottom: 0px;">
+    <div class=" text" style="color: white;">Privacy</div>
+    
+</div>
+
+</body>
+</html>
