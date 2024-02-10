@@ -7,11 +7,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/0be371e6b2.js" crossorigin="anonymous"></script>
 </head>
 <style>
     .box {    
         max-width: auto;
         min-height: auto;
+    }
+    .header {
+        width: 1152px;
+        height: 56px;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        border-radius: 20px;
+        background-color:#2A2C2E;
+        align-self: center;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
     .text {
         text-align: center;
@@ -29,78 +47,317 @@
         font-weight: 500;
         font-style: normal;
     }
-    .container {    
+    .showcase {    
         max-width: auto;
-        min-height: auto;
+        max-height: auto;
+        display: flex; 
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; 
+        flex-wrap:wrap;
+        background-color:#2A2C2E;
+        margin-top: 12px;
+        padding: 24px; gap: 8px;
     }
-    .book {    
+    .arrangement {
+        width: 898px;
+        height: 1747px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 8px;
+    }
+    .card-row {
+        max-width: 294px;
+        height: 577px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    .card {    
         background-color:white;
-        min-width: 294px; 
+        max-width: 294px; 
         height: 577px;
         border-radius: 20px;
+        display: flex; 
+        flex-direction: column;
+        padding: 24px;
+        gap: 8px;
+        justify-content: space-between;
+    }
+    .book-cover {
+        display: flex; 
+        flex-direction: column; 
+        align-items: center;
+    }
+    .book-info {
+        width: 246px;
+        height: 164px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .book-title-author {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        gap: 4px;
+    }
+    .author {
+        width: 246px;
+        max-height: 16px;
+        display: flex;
+        flex-direction: column;
+        font-size: 14px; 
+        color: #000; 
+        opacity: 60%;
+        gap: 4px;
+    }
+    .title {
+        width: 245px;
+        max-height: 24px;
+        display: flex;
+        flex-direction: column;
+        font-size: 16px; 
+        color: #000; 
+        opacity: 100%;
+        
+    }
+    .rate-comment {
+        display:flex;
+        flex-direction: row;
+        align-items: start;
+        gap: 8px;
+    }
+    .border {
+        max-width: 96px;
+        max-height: 32px;
+        display: flex; 
+        flex-direction: row; 
+        gap: 4px; 
+        justify-content: space-between; 
+        align-items: center; 
+        flex-wrap: wrap; 
+        padding-top: 8px; 
+        padding-left: 12px; 
+        padding-right: 12px; 
+        padding-bottom: 8px;
+        border: 1px solid black; 
+        border-radius: 47px; 
+        background-color:white;
+    }
+    .price-tag {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
     }
         
 </style>
 
-<body style="margin: 0; touch-action: manipulation;">
-        <div class="box" style="display: flex; flex-direction: row; gap: 20px; justify-content: space-between; align-items: center; flex-wrap: wrap; padding-top: 24px; padding-left: 20px; padding-right: 20px; padding-bottom: 20px; border-radius: 20px; background-color:#2A2C2E; max-width: 1200px; margin: auto; margin-top: 12px;">
-    <a href="index.html"><div><img src="Assets/logo.png" alt="" width="166px" height="40px"></div></a>
-        <div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; gap: 20px;">
-            <a href="index.html"><div class=" text" style="color: #F4CE47;">Books</div></a>  
-            <div class=" text" style="color: white;">Authors</div>
-            <div class=" text" style="color: white;">What to Read?</div>
-            <div class=" text" style="color: white;">Gift Ideas</div>
-            <div class=" text" style="color: white;">About Us</div>
-        </div>
-        <div style="display: flex; flex-direction: row; gap: 20px; justify-content: space-between; align-items: center; flex-wrap: wrap">
-
-            <div><img src="Assets/icons.png" alt="" width="112px" height="24px"></div>
-            <a href="login.html"><button class="button" style="background-color: #F4CE47; max-width: 106px; max-height: 56px; ">LOGIN</button>   
-            </div></a>       
-    </div>
-
-
-    <div class="box" style="display: flex; flex-direction: row;  justify-content: center; align-items: center; background-color:#F4CE47; margin-top: 12px; flex-wrap: wrap;">
-        <div style="display: flex; flex-direction: row; justify-content: center; gap: 24px; align-items: center;">
-            <div class=" text" style="color: #F4BA30; font-size: 48px;">ALL BOOKS</div>
-            <div class=" text" style="color: #F4BA30; font-size: 48px">ALL BOOKS</div>
-            <div class=" text" style="color: #2A2C2E; font-size: 48px">ALL BOOKS</div>
-            <div class=" text" style="color: #F4BA30; font-size: 48px">ALL BOOKS</div>
-            <div class=" text" style="color: #F4BA30; font-size: 48px">ALL BOOKS</div>
-        </div>
-    </div>
-
-
-    <div class="container" style="display: flex; flex-direction: column; justify-content: center; align-items: center; flex-wrap: wrap; background-color:#2A2C2E; margin-top: 12px; padding: 24px; gap: 8px;">
-        <div class="container" style="display: flex; flex-direction: row;  justify-content: center; align-items: center; flex-wrap: wrap; gap: 8px;">
-            <div class="book"></div>
-            <div class="book"></div>
-            <div class="book"></div>
-        </div>
-        <div class="container" style="display: flex; flex-direction: row;  justify-content: center; align-items: center; flex-wrap: wrap; gap: 8px;">
-            <div class="book"></div>
-            <div class="book"></div>
-            <div class="book"></div>
-        </div>
-        <div class="container" style="display: flex; flex-direction: row;  justify-content: center; align-items: center; flex-wrap: wrap; gap: 8px;">
-            <div class="book"></div>
-            <div class="book"></div>
-            <div class="book" style="display: flex; align-items:baseline; justify-content: center;"><a href="muscle-book.html" style="display: flex; padding: 10px;;"><img src="Assets/muscle.png" alt="" width="246px" height="357px"></a>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="box" style="display: flex; flex-direction: row; gap: 20px; justify-content: space-between; align-items: center; flex-wrap: wrap; padding-top: 24px; padding-left: 20px; padding-right: 20px; padding-bottom: 20px; border-radius: 0px; background-color:#2A2C2E; max-height: 80px;margin-top: 12px; max-width: 1200px; margin: auto; margin-top: 12px;">
-        <div><img src="Assets/logo.png" alt="" width="166px" height="40px"></div>
-
-    </div>
-
-
-    <div class="box" style="display: flex; flex-direction: row; gap: 20px; justify-content: space-between; align-items: center; flex-wrap: wrap; padding-top: 24px; padding-left: 20px; padding-right: 20px; padding-bottom: 20px; border-radius: 0px; background-color:#000000DE; max-height: 40px; max-width: 1200px; margin: auto;">
-        <div class=" text" style="color: white;">Privacy</div>
+<body style="margin: 0;">
+    <div class="box" style="display: flex; flex-direction: column; flex-wrap: wrap; justify-content: center; align-content: center; margin-top: 24px;">
+        <div class="header">
+            <a href="index.html"><div><img src="Assets/logo.png" alt="" width="166px" height="40px"></div></a>
+                <div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; gap: 20px;">
+                    <a href="index.html"><div class=" text" style="color: #F4CE47;">Books</div></a>  
+                    <div class=" text" style="color: white;">Authors</div>
+                    <div class=" text" style="color: white;">What to Read?</div>
+                    <div class=" text" style="color: white;">Gift Ideas</div>
+                    <div class=" text" style="color: white;">About Us</div>
+                </div>
+                <div style="display: flex; flex-direction: row; gap: 20px; justify-content: space-between; align-items: center; flex-wrap: wrap">
         
-    </div>
+                    <div><img src="Assets/icons.png" alt="" width="112px" height="24px"></div>
+                    <a href="login.html"><button class="button" style="background-color: #F4CE47; max-width: 106px; max-height: 56px; ">LOGIN</button>   
+                    </div></a>       
+            </div>
+        
+            <div class="box" style="display: flex; flex-direction: row;  justify-content: center; align-items: center; background-color:#F4CE47; margin-top: 12px; flex-wrap: wrap;">
+                <div style="display: flex; flex-direction: row; justify-content: center; gap: 24px; align-items: center;">
+                    <div class=" text" style="color: #F4BA30; font-size: 48px;">ALL BOOKS</div>
+                    <div class=" text" style="color: #F4BA30; font-size: 48px">ALL BOOKS</div>
+                    <div class=" text" style="color: #2A2C2E; font-size: 48px">ALL BOOKS</div>
+                    <div class=" text" style="color: #F4BA30; font-size: 48px">ALL BOOKS</div>
+                    <div class=" text" style="color: #F4BA30; font-size: 48px">ALL BOOKS</div>
+                </div>
+            </div>
+        
+            <div class="showcase">
+                <div class="arrangement">
+                    <div class="card-row">
+                        <div class="card">
+                            <div class="book-cover"><a href="muscle-book.html" style="display: flex;"><img src="Assets/nation.png" alt="" width="246px" height="357px"></a></div>
+                            <div class="book-info">
+                                <div class="book-title-author">
+                                    <div class="author" style="font-size: 14px; color: #000; opacity: 60%;">Adam Smith</div>
+                                    <div class="title">Wealth of Nations</div></div>
+                                <div class="rate-comment">
+                                    <div class="border"><div class="text">14</div><i style='font-size: 16px;' class='far'>&#xf27a;</i></div>
+                                    <div class="border"><div class="text">4.6</div><i style='font-size:16px' class='far'>&#xf005;</i><div class="text">(165)</div></div>
+                                </div>
+                                <div class="price-tag">
+                                    <div class="text" style="text-decoration: line-through; color: #000; opacity: 38%;">$15.50</div>
+                                    <div class="text">$10.50</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="book-cover"><a href="muscle-book.html" style="display: flex;"><img src="Assets/margarita.png" alt="" width="246px" height="357px"></a></div>
+                            <div class="book-info">
+                                <div class="book-title-author">
+                                    <div class="author" style="font-size: 14px; color: #000; opacity: 60%;">Mikhail Bulgarkov</div>
+                                    <div class="title">The Master & Margarita</div></div>
+                                <div class="rate-comment">
+                                    <div class="border"><div class="text">14</div><i style='font-size: 16px;' class='far'>&#xf27a;</i></div>
+                                    <div class="border"><div class="text">4.6</div><i style='font-size:16px' class='far'>&#xf005;</i><div class="text">(165)</div></div>
+                                </div>
+                                <div class="price-tag">
+                                    <div class="text" style="text-decoration: line-through; color: #000; opacity: 38%;">$15.50</div>
+                                    <div class="text">$10.50</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="book-cover"><a href="muscle-book.html" style="display: flex;"><img src="Assets/memoir.png" alt="" width="246px" height="357px"></a></div>
+                            <div class="book-info">
+                                <div class="book-title-author">
+                                    <div class="author" style="font-size: 14px; color: #000; opacity: 60%;">Alex Gilvarry</div>
+                                    <div class="title">From the Memoirs of a Non-Enemy Combatant</div></div>
+                                <div class="rate-comment">
+                                    <div class="border"><div class="text">14</div><i style='font-size: 16px;' class='far'>&#xf27a;</i></div>
+                                    <div class="border"><div class="text">4.6</div><i style='font-size:16px' class='far'>&#xf005;</i><div class="text">(165)</div></div>
+                                </div>
+                                <div class="price-tag">
+                                    <!--use later when need <div class="text" style="text-decoration: line-through; color: #000; opacity: 38%;">$15.50</div>-->
+                                    <div class="text">$10.50</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+            
+                    <div class="card-row">
+                        <div class="card">
+                            <div class="book-cover"><a href="muscle-book.html" style="display: flex;"><img src="Assets/patrick.png" alt="" width="246px" height="357px"></a></div>
+                            <div class="book-info">
+                                <div class="book-title-author">
+                                    <div class="author" style="font-size: 14px; color: #000; opacity: 60%;">Patrick Ness</div>
+                                    <div class="title">More Than This</div></div>
+                                <div class="rate-comment">
+                                    <div class="border"><div class="text">14</div><i style='font-size: 16px;' class='far'>&#xf27a;</i></div>
+                                    <div class="border"><div class="text">4.6</div><i style='font-size:16px' class='far'>&#xf005;</i><div class="text">(165)</div></div>
+                                </div>
+                                <div class="price-tag">
+                                    <!--use later when need <div class="text" style="text-decoration: line-through; color: #000; opacity: 38%;">$15.50</div>-->
+                                    <div class="text">$10.50</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="book-cover"><a href="muscle-book.html" style="display: flex;"><img src="Assets/erik.png" alt="" width="246px" height="357px"></a></div>
+                            <div class="book-info">
+                                <div class="book-title-author">
+                                    <div class="author" style="font-size: 14px; color: #000; opacity: 60%;">Erik Spiekermann</div>
+                                    <div class="title">Hello I am Erik</div></div>
+                                <div class="rate-comment">
+                                    <div class="border"><div class="text">14</div><i style='font-size: 16px;' class='far'>&#xf27a;</i></div>
+                                    <div class="border"><div class="text">4.6</div><i style='font-size:16px' class='far'>&#xf005;</i><div class="text">(165)</div></div>
+                                </div>
+                                <div class="price-tag">
+                                    <!--use later when need <div class="text" style="text-decoration: line-through; color: #000; opacity: 38%;">$15.50</div>-->
+                                    <div class="text">$10.50</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="book-cover"><a href="muscle-book.html" style="display: flex;"><img src="Assets/godfather.png" alt="" width="246px" height="357px"></a></div>
+                            <div class="book-info">
+                                <div class="book-title-author">
+                                    <div class="author" style="font-size: 14px; color: #000; opacity: 60%;">Mario Puzo</div>
+                                    <div class="title">The Godfather</div></div>
+                                <div class="rate-comment">
+                                    <div class="border"><div class="text">14</div><i style='font-size: 16px;' class='far'>&#xf27a;</i></div>
+                                    <div class="border"><div class="text">4.6</div><i style='font-size:16px' class='far'>&#xf005;</i><div class="text">(165)</div></div>
+                                </div>
+                                <div class="price-tag">
+                                    <div class="text" style="text-decoration: line-through; color: #000; opacity: 38%;">$15.50</div>
+                                    <div class="text">$10.50</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="card-row">
+            
+                        <div class="card">
+                            <div class="book-cover"><a href="muscle-book.html" style="display: flex;"><img src="Assets/names.png" alt="" width="246px" height="357px"></a></div>
+                            <div class="book-info">
+                                <div class="book-title-author">
+                                    <div class="author" style="font-size: 14px; color: #000; opacity: 60%;">Don Delillo</div>
+                                    <div class="title">The Names</div></div>
+                                <div class="rate-comment">
+                                    <div class="border"><div class="text">14</div><i style='font-size: 16px;' class='far'>&#xf27a;</i></div>
+                                    <div class="border"><div class="text">4.6</div><i style='font-size:16px' class='far'>&#xf005;</i><div class="text">(165)</div></div>
+                                </div>
+                                <div class="price-tag">
+                                    <!--use later when need <div class="text" style="text-decoration: line-through; color: #000; opacity: 38%;">$15.50</div>-->
+                                    <div class="text">$10.50</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="book-cover"><a href="muscle-book.html" style="display: flex;"><img src="Assets/sun.png" alt="" width="246px" height="357px"></a></div>
+                            <div class="book-info">
+                                <div class="book-title-author">
+                                    <div class="author" style="font-size: 14px; color: #000; opacity: 60%;">Daniel Gargallo</div>
+                                    <div class="title">She Beyond Sun</div></div>
+                                <div class="rate-comment">
+                                    <div class="border"><div class="text">14</div><i style='font-size: 16px;' class='far'>&#xf27a;</i></div>
+                                    <div class="border"><div class="text">4.6</div><i style='font-size:16px' class='far'>&#xf005;</i><div class="text">(165)</div></div>
+                                </div>
+                                <div class="price-tag">
+                                    <div class="text" style="text-decoration: line-through; color: #000; opacity: 38%;">$15.50</div>
+                                    <div class="text">$10.50</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="book-cover"><a href="muscle-book.html" style="display: flex;"><img src="Assets/muscle.png" alt="" width="246px" height="357px"></a></div>
+                            <div class="book-info">
+                                <div class="book-title-author">
+                                    <div class="author" style="font-size: 14px; color: #000; opacity: 60%;">Alan Trotter</div>
+                                    <div class="title">Muscle</div></div>
+                                <div class="rate-comment">
+                                    <div class="border"><div class="text">14</div><i style='font-size: 16px;' class='far'>&#xf27a;</i></div>
+                                    <div class="border"><div class="text">4.6</div><i style='font-size:16px' class='far'>&#xf005;</i><div class="text">(165)</div></div>
+                                </div>
+                                <div class="price-tag">
+                                    <!--use later when need <div class="text" style="text-decoration: line-through; color: #000; opacity: 38%;">$15.50</div>-->
+                                    <div class="text">$22.50</div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                </div>      
+        
+            <div class="box" style="display: flex; flex-direction: row; gap: 20px; justify-content: space-between; align-items: center; flex-wrap: wrap; padding-top: 24px; padding-left: 20px; padding-right: 20px; padding-bottom: 20px; border-radius: 0px; background-color:#2A2C2E; max-height: 80px;margin-top: 12px; max-width: 1200px; margin: auto; margin-top: 12px;">
+                <div><img src="Assets/logo.png" alt="" width="166px" height="40px"></div>
+            </div>
+        
+            <div class="box" style="display: flex; flex-direction: row; gap: 20px; justify-content: space-between; align-items: center; flex-wrap: wrap; padding-top: 24px; padding-left: 20px; padding-right: 20px; padding-bottom: 20px; border-radius: 0px; background-color:#000000DE; max-height: 40px; max-width: 1200px; margin: auto;">
+                <div class=" text" style="color: white;">Privacy</div>
+                
+            </div>       
 
 </body>
 </html>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             

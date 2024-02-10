@@ -17,7 +17,7 @@
             max-width: 400px;
             margin: 100px auto;
             padding: 20px;
-            background-color: #ffffff;
+            background-color: #2A2C2E;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
@@ -53,37 +53,79 @@
             color: #ffffff;
             cursor: pointer;
         }
+
+        .box {    
+        max-width: auto;
+        min-height: auto;
+        }
+    .text {
+        text-align: center;
+        font-size: 16px;
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        }
+    .button {
+        padding: 16px;
+        border-radius: 16px;
+        flex-wrap: wrap;
+        font-size: 16px;
+        font-family: "Inter", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        }
+    .container {    
+        max-width: auto;
+        min-height: auto;
+        }
     </style>
 </head>
 <body>
-
-<div class="registration-container">
-    <h2>Registration Form</h2>
-    <form class="registration-form" action="your_registration_processing_script.php" method="post">
-        <div class="form-group">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
+    <div class="box" style="display: flex; flex-direction: row; gap: 20px; justify-content: space-between; align-items: center; flex-wrap: wrap; padding-top: 24px; padding-left: 20px; padding-right: 20px; padding-bottom: 20px; border-radius: 20px; background-color:#2A2C2E; max-width: 1200px; margin: auto; margin-top: 12px;">
+        <a href="index.html"><div><img src="Assets/logo.png" alt="" width="166px" height="40px"></div></a>
+            </div>       
         </div>
 
-        <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-        </div>
+<div class="registration-container" style="display: flex; flex-direction: column; gap: 20px; justify-content: space-between; align-items: start; flex-wrap: wrap; padding-top: 24px; padding-left: 20px; padding-right: 20px; padding-bottom: 20px; border-radius: 20px; background-color:#2A2C2E; max-width: 1200px; margin: auto; margin-top: 12px;">
+    <h2 style="display: font; color: #ffffff;">Registration Form</h2>
+    <div class="container">
+        <form class="registration-form">
+            <div class="form-group" style="display: font; color: #ffffff;">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+    
+            <div class="form-group" style="display: font; color: #ffffff;">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+    
+            <div class="form-group" style="display: font; color: #ffffff;">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+    
+            <div class="form-group" style="display: font; color: #ffffff;">
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+    
+            <div class="form-group">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+    </div>
+</div>
 
-        <div class="form-group">
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-        </div>
+<div class="box" style="display: flex; flex-direction: row; gap: 20px; justify-content: space-between; align-items: center; flex-wrap: wrap; padding-top: 24px; padding-left: 20px; padding-right: 20px; padding-bottom: 20px; border-radius: 0px; background-color:#2A2C2E; max-height: 80px;margin-top: 12px; max-width: 1200px; margin: auto; margin-top: 12px;">
+    <div><img src="Assets/logo.png" alt="" width="166px" height="40px"></div>
 
-        <div class="form-group">
-            <label for="confirm-password">Confirm Password:</label>
-            <input type="password" id="confirm-password" name="confirm-password" required>
-        </div>
+</div>
 
-        <div class="form-group">
-            <input type="submit" value="Register">
-        </div>
-    </form>
+
+<div class="box" style="display: flex; flex-direction: row; gap: 20px; justify-content: space-between; align-items: center; flex-wrap: wrap; padding-top: 24px; padding-left: 20px; padding-right: 20px; padding-bottom: 20px; border-radius: 0px; background-color:#000000DE; max-height: 40px; max-width: 1200px; margin: auto; margin-bottom: 0px;">
+    <div class=" text" style="color: white;">Privacy</div>
+    
 </div>
 
 </body>
