@@ -32,6 +32,36 @@
         margin: auto; 
         margin-top: 12px;
     }
+    .logo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .flex-container{
+        display: flex;
+        flex-direction: row;
+        gap: 32px;
+    }
+    .nav-row{
+        display: flex;
+        justify-content: space-between;
+    }
+    @media (max-width: 800px) {
+        .flex-container{
+            flex-direction: column;
+            gap: 32px;
+            justify-content: center; 
+        }  
+        .logo{
+            flex-direction: column;
+            justify-content: center;
+        }  
+        .login-items{
+            flex-direction: column;
+            justify-content: center;
+        } 
+    }
     .text {
         text-align: center;
         font-size: 16px;
@@ -168,18 +198,30 @@
 
 <body style="margin: 0;">
         <div class="header">
-            <a href="index.html"><div style="display: flex;"><img src="Assets/logo.png" alt="" width="166px" height="40px"></div></a>
-                <div style="display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; gap: 32px;">
-                    <a href="index.html"><div class=" text" style="color: #F4CE47;">Books</div></a>  
-                    <div class=" text" style="color: white;">Authors</div>
-                    <div class=" text" style="color: white;">What to Read?</div>
-                    <div class=" text" style="color: white;">Gift Ideas</div>
-                    <div class=" text" style="color: white;">About Us</div>
+
+                <div class="nav-row">
+                    <div class="logo"><a href="index.html"><div><img src="Assets/logo.png" alt="" width="166px" height="40px"></div></a></div>
+                </div>    
+                <div class="nav-row">
+                    <div class="flex-container">
+                        <a href="index.html"><div class=" text" style="color: #F4CE47;">Books</div></a>  
+                        <div class=" text" style="color: white;">Authors</div>
+                        <div class=" text" style="color: white;">What to Read?</div>
+                        <div class=" text" style="color: white;">Gift Ideas</div>
+                        <div class=" text" style="color: white;">About Us</div>
+                    </div>
                 </div>
-                <div style="display: flex; flex-direction: row; gap: 40px; justify-content: space-between; align-items: center;">       
-                    <div><img src="Assets/icons.png" alt="" width="112px" height="24px"></div>
-                    <a href="login.html"><button class="button" style="background-color: #F4CE47; max-width: 106px; max-height: 56px; ">LOGIN</button>   
-                    </div></a>       
+                <div class="nav-row">
+                    <div class="login-items">
+                        <div style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; gap: 40px;">
+                            <div><img src="Assets/icons.png" alt="" width="112px" height="24px"></div>
+                            <a href="login.html"><button class="button" style="background-color: #F4CE47; max-width: 106px; max-height: 56px; ">LOGIN</button>   
+                            </a>
+                        </div> 
+                    </div>
+                      
+                </div>
+                    
             </div>
         
             <div class="box" style="display: flex; flex-direction: row;  justify-content: center; align-items: center; background-color:#F4CE47; margin-top: 12px; margin-bottom: 12px; height: 80px;">
