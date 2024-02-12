@@ -15,52 +15,56 @@
         height: auto;
     }
     .header {
-        max-width: 1152px;
+        max-width: 1200px;
         min-width: fit-content;
-        display: flex; 
-        flex-direction: row; 
-        gap: 24px; 
-        justify-content: space-between; 
-        align-items: center; 
-        flex-wrap: wrap; 
-        padding-top: 20px;   
-        padding-bottom: 20px;
-        padding-left: 24px;
-        padding-right: 24px; 
+        max-height: 413px;
         border-radius: 20px; 
         background-color:#2A2C2E;  
         margin: auto; 
         margin-top: 12px;
     }
-    .logo{
+    .nav-bar{
         display: flex;
         flex-direction: row;
-        align-items: center;
+        flex-wrap: wrap; 
         justify-content: center;
+        align-items: center; 
+        padding-top: 20px;   
+        padding-bottom: 20px;
+        padding-left: 24px;
+        padding-right: 24px;
     }
     .flex-container{
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         gap: 32px;
+        justify-content: center;
+        align-items: center;
     }
     .nav-row{
+        width: 100%;
         display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-between;
+        align-items: center;
     }
-    @media (max-width: 800px) {
+    @media (max-width: 430px) {
         .flex-container{
             flex-direction: column;
-            gap: 32px;
-            justify-content: center; 
-        }  
-        .logo{
-            flex-direction: column;
+            gap: 16px;
             justify-content: center;
-        }  
-        .login-items{
+    }
+        .nav-row{
             flex-direction: column;
-            justify-content: center;
-        } 
+            justify-content: space-evenly;
+            gap: 29px;
+            padding-top: 16px;   
+            padding-bottom: 35px;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
     }
     .text {
         text-align: center;
@@ -198,31 +202,30 @@
 
 <body style="margin: 0;">
         <div class="header">
+                <div class="nav-bar">
+                    <div class="nav-row">
 
-                <div class="nav-row">
-                    <div class="logo"><a href="index.html"><div><img src="Assets/logo.png" alt="" width="166px" height="40px"></div></a></div>
-                </div>    
-                <div class="nav-row">
-                    <div class="flex-container">
-                        <a href="index.html"><div class=" text" style="color: #F4CE47;">Books</div></a>  
-                        <div class=" text" style="color: white;">Authors</div>
-                        <div class=" text" style="color: white;">What to Read?</div>
-                        <div class=" text" style="color: white;">Gift Ideas</div>
-                        <div class=" text" style="color: white;">About Us</div>
-                    </div>
-                </div>
-                <div class="nav-row">
-                    <div class="login-items">
+                        <div><a href="index.html"><div><img src="Assets/logo.png" alt="" width="166px" height="40px"></div></a></div>
+    
+                        <div class="flex-container">
+                            <a href="index.html"><div class=" text" style="color: #F4CE47;">Books</div></a>  
+                            <div class=" text" style="color: white;">Authors</div>
+                            <div class=" text" style="color: white;">What to Read?</div>
+                            <div class=" text" style="color: white;">Gift Ideas</div>
+                            <div class=" text" style="color: white;">About Us</div>
+                        </div>
+    
                         <div style="display: flex; flex-direction: row; align-items: center; justify-content: space-between; gap: 40px;">
                             <div><img src="Assets/icons.png" alt="" width="112px" height="24px"></div>
                             <a href="login.html"><button class="button" style="background-color: #F4CE47; max-width: 106px; max-height: 56px; ">LOGIN</button>   
                             </a>
-                        </div> 
+                        </div>
+
+                    </div> 
+                          
                     </div>
-                      
+
                 </div>
-                    
-            </div>
         
             <div class="box" style="display: flex; flex-direction: row;  justify-content: center; align-items: center; background-color:#F4CE47; margin-top: 12px; margin-bottom: 12px; height: 80px;">
                 <div style="display: flex; flex-direction: row; justify-content: center; gap: 24px; align-items: center;">
