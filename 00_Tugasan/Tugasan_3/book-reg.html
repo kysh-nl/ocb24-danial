@@ -2,131 +2,160 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Form</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-
-        .registration-container {
-            max-width: 400px;
-            margin: 100px auto;
-            padding: 20px;
-            background-color: #2A2C2E;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .registration-container h2 {
-            color: #333333;
-        }
-
-        .registration-form {
-            margin-top: 20px;
-        }
-
-        .form-group {
-            margin-bottom: 15px;
-        }
-
-        .form-group label {
-            display: block;
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-
-        .form-group input {
-            width: 100%;
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-
-        .form-group input[type="submit"] {
-            background-color: #4caf50;
-            color: #ffffff;
-            cursor: pointer;
-        }
-
-        .box {    
-        max-width: auto;
-        min-height: auto;
-        }
-    .text {
-        text-align: center;
-        font-size: 16px;
-        font-family: "Inter", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        }
-    .button {
-        padding: 16px;
-        border-radius: 16px;
-        flex-wrap: wrap;
-        font-size: 16px;
-        font-family: "Inter", sans-serif;
-        font-weight: 500;
-        font-style: normal;
-        }
-    .container {    
-        max-width: auto;
-        min-height: auto;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no" name="viewport">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/0be371e6b2.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <div class="box" style="display: flex; flex-direction: row; gap: 20px; justify-content: space-between; align-items: center; flex-wrap: wrap; padding-top: 24px; padding-left: 20px; padding-right: 20px; padding-bottom: 20px; border-radius: 20px; background-color:#2A2C2E; max-width: 1200px; margin: auto; margin-top: 12px;">
-        <a href="index.html"><div><img src="Assets/logo.png" alt="" width="166px" height="40px"></div></a>
-            </div>       
+    <div class="header">
+        <div class="nav-bar">
+            <div class="nav-row">
+                <div><a href="index.html"><div><img src="Assets/logo.png" alt="" width="166px" height="40px"></div></a>
+                </div>
+            </div>                  
         </div>
-
-<div class="registration-container" style="display: flex; flex-direction: column; gap: 20px; justify-content: space-between; align-items: start; flex-wrap: wrap; padding-top: 24px; padding-left: 20px; padding-right: 20px; padding-bottom: 20px; border-radius: 20px; background-color:#2A2C2E; max-width: 1200px; margin: auto; margin-top: 12px;">
-    <h2 style="display: font; color: #ffffff;">Registration Form</h2>
-    <div class="container">
-        <form class="registration-form">
-            <div class="form-group" style="display: font; color: #ffffff;">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
-            </div>
-    
-            <div class="form-group" style="display: font; color: #ffffff;">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-    
-            <div class="form-group" style="display: font; color: #ffffff;">
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-    
-            <div class="form-group" style="display: font; color: #ffffff;">
-                <label for="confirm-password">Confirm Password:</label>
-                <input type="password" id="confirm-password" name="confirm-password" required>
-            </div>
-    
-            <div class="form-group">
-                <input type="submit" value="Register">
-            </div>
-        </form>
     </div>
-</div>
 
-<div class="box" style="display: flex; flex-direction: row; gap: 20px; justify-content: space-between; align-items: center; flex-wrap: wrap; padding-top: 24px; padding-left: 20px; padding-right: 20px; padding-bottom: 20px; border-radius: 0px; background-color:#2A2C2E; max-height: 80px;margin-top: 12px; max-width: 1200px; margin: auto; margin-top: 12px;">
-    <div><img src="Assets/logo.png" alt="" width="166px" height="40px"></div>
+    <div class="background">
+        <div class="form-container">
+            <div class="form-header">
+                <h2 style="display: font; font-family: Inter, sans-serif; color: #ffffff; margin: 0px;">Registration Form</h2>
+            </div>
 
-</div>
+        <div class="form-detail">
+            <div class="container">
 
+                <div class="form-group" style="display: flex; justify-content: space-between;">
+                    <label for="details" style="font-weight: normal; font-size: 20px;">Book Details</label>
+                    <div style="border-top: 1px solid #ffffff; width: 580px;"></div>
+                </div>
 
-<div class="box" style="display: flex; flex-direction: row; gap: 20px; justify-content: space-between; align-items: center; flex-wrap: wrap; padding-top: 24px; padding-left: 20px; padding-right: 20px; padding-bottom: 20px; border-radius: 0px; background-color:#000000DE; max-height: 40px; max-width: 1200px; margin: auto; margin-bottom: 0px;">
-    <div class=" text" style="color: white;">Privacy</div>
-    
-</div>
+                <form class="registration-form">
+
+                    <div class="form-group" style="display: flex; justify-content: space-between;">
+                        <label for="title" style="font-weight: normal; font-size: 16px;">Title</label>
+                        <input type="text" id="title" name="title" required style="border: 1px solid #ffffff; width: 570px; height: 56px; border-radius: 16px; background-color: #ffffff; align-items: center; padding: 0%;">
+                    </div>
+
+                    <div class="form-group" style="display: flex; justify-content: space-between;">
+                        <label for="genre" style="font-weight: normal; font-size: 16px;">Genre</label>
+                        <input type="text" id="genre" name="genre" required style="border: 1px solid #ffffff; width: 570px; height: 56px; border-radius: 16px; background-color: #ffffff; align-items: center; padding: 0%;">
+                    </div>
+
+                    <div class="form-group" style="display: flex; justify-content: space-between;">
+                        <label for="author" style="font-weight: normal; font-size: 16px;">Author</label>
+                        <input type="text" id="author" name="author" required style="border: 1px solid #ffffff; width: 570px; height: 56px; border-radius: 16px; background-color: #ffffff; align-items: center; padding: 0%;">
+                    </div>
+
+                    <div class="form-group" style="display: flex; justify-content: space-between;">
+                        <label for="publisher" style="font-weight: normal; font-size: 16px;">Publisher</label>
+                        <input type="text" id="publisher" name="publisher" required style="border: 1px solid #ffffff; width: 570px; height: 56px; border-radius: 16px; background-color: #ffffff; align-items: center; padding: 0%;">
+                    </div>
+
+                    <div class="form-group" style="display: flex; justify-content: space-between;">
+                        <label for="year" style="font-weight: normal; font-size: 16px;">Year Published</label>
+                        <input type="text" id="year" name="year" required style="border: 1px solid #ffffff; width: 570px; height: 56px; border-radius: 16px; background-color: #ffffff; align-items: center; padding: 0%;">
+                    </div>
+
+                    <div class="form-group" style="display: flex; justify-content: space-between; gap: 10px;">
+                        <label for="availability" style="font-weight: normal; font-size: 16px;">Availability</label>
+
+                        <div style="display: flex; flex-direction: row; width: 570px; align-items: center; justify-content: space-between; gap: 12px;">
+
+                            <label for="online" style="display: flex; flex-direction: row; font-size: 16px; align-items: center; border: 1px #ffffff; width: 82px; height: 24px;justify-content: space-between;">
+                                <div><input type="radio" name="availability" id="online" value="online">
+                                </div>
+
+                                <div class="text" style="width: 48px;">Online</div>
+                            </label>
+                
+                            <label for="in-store" style="display: flex; flex-direction: row; font-size: 16px; align-items: center; border: 1px #ffffff; width: 91px; height: 24px; justify-content: space-between;">
+                                <div><input type="radio" name="availability" id="in-store" required></div>
+                                
+                                <div class="text">In-Store</div>
+                            </label>
+                
+                            <label for="both" style="display: flex; flex-direction: row; font-size: 16px; align-items: center; border: 1px #ffffff; width: 159px; height: 24px; justify-content: space-between;">
+                                <div><input type="radio" name="availability" id="both" required></div>
+                                
+                                <div class="text">Online & In-Store</div>
+                            </label>
+                        </div>
+                                                
+                    </div>
+
+                    <div class="form-group" style="display: flex; justify-content: space-between;">
+                        <label for="pages" style="font-weight: normal; font-size: 16px;">Pages</label>
+                        <input type="text" id="pages" name="pages" required style="border: 1px solid #ffffff; width: 570px; height: 56px; border-radius: 16px; background-color: #ffffff; align-items: center; padding: 0%;">
+                    </div>
+
+                    <div class="form-group" style="display: flex; justify-content: space-between;">
+                        <label for="Language" style="font-weight: normal; font-size: 16px;">Language</label>
+                        <input type="text" id="language" name="language" required style="border: 1px solid #ffffff; width: 570px; height: 56px; border-radius: 16px; background-color: #ffffff; align-items: center; padding: 0%;">
+                    </div>
+
+                </form>
+
+                <div class="form-group" style="display: flex; justify-content: space-between;">
+                    <label for="registree" style="font-weight: normal; font-size: 20px;">Registree Details</label>
+                    <div style="border-top: 1px solid #ffffff; width: 530px;"></div>
+                </div>
+
+                <form class="registration-form">
+
+                    <div class="form-group" style="display: flex; justify-content: space-between;">
+                        <label for="name" style="font-weight: normal; font-size: 16px;">Name</label>
+                        <input type="text" id="name" name="name" required style="border: 1px solid #ffffff; width: 570px; height: 56px; border-radius: 16px; background-color: #ffffff; align-items: center; padding: 0%;">
+                    </div>
+
+                    <div class="form-group" style="display: flex; justify-content: space-between;">
+                        <label for="email" style="font-weight: normal; font-size: 16px;">Email</label>
+                        <input type="text" id="email" name="email" required style="border: 1px solid #ffffff; width: 570px; height: 56px; border-radius: 16px; background-color: #ffffff; align-items: center; padding: 0%;">
+                    </div>
+
+                    <label for="agreement" style="display: flex; flex-direction: row; font-size: 16px; align-items: center; border: 1px #ffffff; width: 613px; height: 24px;justify-content: space-between; margin-bottom: 20px;">
+                        <div><input type="checkbox" name="agreement" id="agreement" value="agreement" required>
+                        </div>
+
+                        <div class="text" style="width: 566px; color: #ffffff;">I hereby agree to follow all rules and confirmed that all details are accurate</div>
+                    </label>
+
+                </form> 
+
+                <div class="form-group">
+                    <input type="submit" value="Save Your Book" style="border: #ffffff; border-radius: 16px; height: 56px;">
+                </div>
+             </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-up">
+                <div style="justify-self: start;"><a href="index.html"><div><img src="Assets/logo.png" alt="" width="204px" height="48px"></div></a>
+            </div>
+        
+                <div style="justify-self: end;"><a href="index.html"><div><img src="Assets/socmed.png" alt="" max-width="104px" max-height="24px"></div></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div style="display: flex; flex-direction: row; justify-content: space-between; gap: 16px; align-items: center;">
+                    <div class=" text" style="color: white; font-size: 12px">Terms and Condition</div>
+                    <div class=" text" style="color: white; font-size: 12px">Privacy Policy</div>
+                </div>
+                <div style="display: flex; flex-direction: row; justify-content: space-between; gap: 16px; align-items: center;">
+                    <div class=" text" style="color: white; font-size: 12px;">+44 1332 412251</div>
+                    <div class=" text" style="color: white; font-size: 12px">support@bookshelf.com</div>
+                </div>                    
+            </div>               
+            </div> 
+        </div>
 
 </body>
 </html>
